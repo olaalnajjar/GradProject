@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/NavMap">
+
+    <fragment
+        android:id="@+id/NavMap"
+        android:name="com.example.gradproject.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/NavCamera" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NavCamera"
+        android:name="com.example.gradproject.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_NavCamera_to_navigation_notifications"
+            app:destination="@id/NavAnalysis" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NavAnalysis"
+        android:name="com.example.gradproject.AnalysisFragment"
+        android:label="@string/title_analysis"
+        tools:layout="@layout/fragment_analysis" />
+</navigation>
