@@ -14,5 +14,23 @@
     <string name="title_camera">Camera</string>
     <string name="title_analysis">Analysis</string>
     <string name="map_label">Senior Location Detected</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--                  Drawer texts                        -->
+    <string name="SettingsDrawer">Settings</string>
+    <string name="HomepageDrawer">Homepage</string>
+    <string name="UserDrawer">User Settings</string>
+    <string name="BehaviourTrackingDrawer">Behaviour Tracking</string>
+    <string name="DataAnalysisDrawer">Data Analysis</string>
+    <string name="HouseAlarmsDrawer">House Alarms</string>
+    <string name="HealthAndVitalsDrawer">Health and Vitals</string>
+    <string name="CamerasDrawer">Cameras</string>
+    <string name="DashboardDrawer">Dashboard</string>
+    <string name="LogoutDrawer">Logout</string>
+
+
+
+
+
 
 </resources>

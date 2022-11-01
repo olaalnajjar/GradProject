@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/HomepageItem"
+                android:icon="@drawable/home"
+                android:title="@string/HomepageDrawer"/>
+
+            <item
+                android:id="@+id/UserItem"
+                android:icon="@drawable/user"
+                android:title="@string/UserDrawer"/>
+            <item
+                android:id="@+id/BehaviourTrackingItem"
+                android:icon="@drawable/behavioustracking"
+                android:title="@string/BehaviourTrackingDrawer"/>
+            <item
+                android:id="@+id/DataAnalysisItem"
+                android:icon="@drawable/dataanalysis"
+                android:title="@string/DataAnalysisDrawer"/>
+            <item
+                android:id="@+id/HouseAlarms"
+                android:icon="@drawable/housealarms"
+                android:title="@string/HouseAlarmsDrawer"/>
+            <item
+                android:id="@+id/HealthAndVitalsItem"
+                android:icon="@drawable/critical_care"
+                android:title="@string/HealthAndVitalsDrawer"/>
+            <item
+                android:id="@+id/CamerasItem"
+                android:icon="@drawable/camerassettings"
+                android:title="@string/CamerasDrawer"/>
+            <item
+                android:id="@+id/DashboardItem"
+                android:icon="@drawable/dashboard_"
+                android:title="@string/DashboardDrawer"/>
+
+        </group>
+
+
+        <item
+            android:id="@+id/LogoutItem"
+            android:icon="@drawable/logout"
+            android:title="@string/LogoutDrawer"/>
+
+
+</menu>

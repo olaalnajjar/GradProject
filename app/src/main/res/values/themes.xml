@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.GradProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -13,4 +14,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.GradProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
+    </style>
+    <style name="Theme.GradProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GradProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
