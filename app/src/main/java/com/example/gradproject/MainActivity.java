@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+
+
 import android.os.Bundle;
+
 
 import com.example.gradproject.databinding.ActivityMainBinding;
 
@@ -35,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
-
-
 
     }
 
