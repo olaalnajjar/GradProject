@@ -36,6 +36,7 @@
     <string name="LogoutDrawer">Logout</string>
     <!--                Dashboard strings           -->
     <string name="AddButton">Add new house</string>
+    <string name="CurrentHouse">Current Houses</string>
 
 
 </resources>
