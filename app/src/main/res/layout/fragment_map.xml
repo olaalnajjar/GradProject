@@ -23,7 +23,7 @@
         android:layout_width="363dp"
         android:layout_height="204dp"
         android:contentDescription="TODO"
-        android:src="@drawable/map_img"
+        android:src="@drawable/hometransparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
