@@ -1,26 +1,56 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <PreferenceCategory android:title="@string/title_activity_user_settings">
 
         <EditTextPreference
-            app:iconSpaceReserved="false"
-            app:key="name"
-            app:title="@string/nameTitle"
+            app:key="phone"
+            app:title="@string/phoneNumberTitle"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
-            app:iconSpaceReserved="false"
             app:key="username"
             app:title="@string/usernameTitle"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
-            app:iconSpaceReserved="false"
+            app:key="name"
+            app:title="@string/nameTitle"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
             app:key="email"
             app:title="@string/emailTitle"
             app:useSimpleSummaryProvider="true" />
-        <EditTextPreference
-            app:iconSpaceReserved="false"
-            app:key="phone"
-            app:title="@string/phoneNumberTitle"
-            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_activity_camera_settings">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="recording"
+            android:title="@string/record" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="allcameras"
+            android:title="@string/allcameras"
+            app:summary="Turns on all cameras in the house during day and time. If turned off, detects which room the senior is in and only turns on that camera." />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Preference category">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="powerCamera1"
+            android:title="@string/camera1" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="powerCamera2"
+            android:title="@string/camera2" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="powerCamera3"
+            android:title="@string/camera3" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="powerCamera4"
+            android:title="Switch preference" />
+    </PreferenceCategory>
 
 
 </PreferenceScreen>

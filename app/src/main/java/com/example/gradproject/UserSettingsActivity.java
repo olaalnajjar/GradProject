@@ -38,14 +38,15 @@ public class UserSettingsActivity extends AppCompatActivity implements Navigatio
         Toolbar toolbar= findViewById(R.id.toolbar);
         drawer =(DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Settings");
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawer.addDrawerListener(toggle);
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         toggle.syncState();
 
 
-        ImageView img = findViewById(R.id.img);
-        img.bringToFront();
+
 
     }
 

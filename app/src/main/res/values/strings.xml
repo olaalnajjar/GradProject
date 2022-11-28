@@ -26,7 +26,7 @@
     <!--                  Drawer texts                        -->
     <string name="SettingsDrawer">Settings</string>
     <string name="HomepageDrawer">Homepage</string>
-    <string name="UserDrawer">User Settings</string>
+    <string name="SettingsMenuDrawer">Settings</string>
     <string name="BehaviourTrackingDrawer">Behaviour Tracking</string>
     <string name="DataAnalysisDrawer">Data Analysis</string>
     <string name="HouseAlarmsDrawer">House Alarms</string>
@@ -47,19 +47,23 @@
     <string name="addHouse">Add a New House</string>
 
 
-
-    <!--                User Settings strings           -->
+    <!--                 Settings strings           -->
     <string name="title_activity_user_settings">User Settings</string>
+    <string name="title_activity_camera_settings">Camera Settings</string>
 
-    <!--User Preference Titles -->
-    <string name="user_settings_header">Jane Doe</string>
 
-    <!-- User Preferences -->
+
+    <!--  Preferences -->
     <string name="nameTitle">Name</string>
     <string name="usernameTitle">Username</string>
     <string name="emailTitle">Email</string>
     <string name="phoneNumberTitle">Phone Number</string>
-
+    <string name="record">Record</string>
+    <string name="allcameras">All Cameras</string>
+    <string name="camera1">Camera I</string>
+    <string name="camera2">Camera II</string>
+    <string name="camera3">Camera III</string>
+    <string name="camera4">Camera IV</string>
 
 
 
