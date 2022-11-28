@@ -34,6 +34,8 @@
     <string name="CamerasDrawer">Cameras</string>
     <string name="DashboardDrawer">Dashboard</string>
     <string name="LogoutDrawer">Logout</string>
+    <!--                Dashboard strings           -->
+    <string name="AddButton">Add new house</string>
 
 
 </resources>
