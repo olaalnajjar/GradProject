@@ -37,6 +37,8 @@
     <!--                Dashboard strings           -->
     <string name="AddButton">Add new house</string>
     <string name="CurrentHouse">Current Houses</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="addHouse">Add a New House</string>
 
 
     <!--                User Settings strings           -->
