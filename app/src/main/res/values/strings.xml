@@ -34,10 +34,36 @@
     <string name="CamerasDrawer">Cameras</string>
     <string name="DashboardDrawer">Dashboard</string>
     <string name="LogoutDrawer">Logout</string>
+
     <string name="Camera_Label_Title">Living Room</string>
     <string name="current_vitals">Current Vitals:</string>
     <string name="blood_pressure">Blood Pressure: 120/80 mmHg</string>
     <string name="heart_rate">Heart Rate: 72 BPM</string>
 
+    <!--                Dashboard strings           -->
+    <string name="AddButton">Add new house</string>
+    <string name="CurrentHouse">Current Houses</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="addHouse">Add a New House</string>
+
+
+
+    <!--                User Settings strings           -->
+    <string name="title_activity_user_settings">User Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>
