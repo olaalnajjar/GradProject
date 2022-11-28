@@ -8,10 +8,10 @@
             <item
                 android:id="@+id/HomepageItem"
                 android:icon="@drawable/home"
-                android:title="@string/HomepageDrawer"/>
+                android:title="@string/HomepageDrawer" />
 
             <item
-                android:id="@+id/UserItem"
+                android:id="@+id/UserSettings"
                 android:icon="@drawable/user"
                 android:title="@string/UserDrawer"/>
             <item
