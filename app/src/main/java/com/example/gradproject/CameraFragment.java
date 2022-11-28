@@ -1,5 +1,6 @@
 package com.example.gradproject;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -56,46 +57,35 @@ public class CameraFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
+        
+        ViewGroup rootView = (ViewGroup) inflater
+                .inflate(R.layout.fragment_camera, container, false);
 
-        VideoView videoView =  (VideoView) container.findViewById(R.id.videoView);
+        VideoView videoView =  (VideoView) rootView.findViewById(R.id.videoView);
 
         String path = "android.resource://"+getActivity().getPackageName()+"/" + R.raw.test;
 
-        if (videoView != null) {
-            videoView.setVideoPath(path);
-            MediaController mediaController = new MediaController(getActivity());
-            mediaController.setAnchorView(videoView);
-            videoView.setMediaController(mediaController);
-           // videoView.setVideoPath(path);
-            //videoView.setVideoURI(Uri.parse(path));
-            videoView.requestFocus();
-            videoView.start();
-        } else {
-            Toast.makeText(getActivity(), "View is null", Toast.LENGTH_SHORT);
-        }
+        MediaController mediaController = new MediaController(getActivity());
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
+        // videoView.setVideoPath(path);
+        videoView.setVideoURI(Uri.parse(path));
+        videoView.requestFocus();
+        videoView.start();
 
 
 
 
-       /* if (view != null)
-        {
-            view.setVideoURI(Uri.parse(path));
-            view.requestFocus();
-            view.start();
-        } else
-        {
-            Toast.makeText(getActivity(),"View is null",Toast.LENGTH_SHORT);
-        }*/
 
 
-        return inflater.inflate(R.layout.fragment_camera, container, false);
+        return rootView;
     }
 }
