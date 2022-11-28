@@ -12,7 +12,7 @@
 
             <item
                 android:id="@+id/UserSettings"
-                android:icon="@drawable/user"
+                android:icon="@drawable/cog"
                 android:title="@string/SettingsMenuDrawer"/>
             <item
                 android:id="@+id/BehaviourTrackingItem"

@@ -65,7 +65,7 @@ public class CameraFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        
+
         ViewGroup rootView = (ViewGroup) inflater
                 .inflate(R.layout.fragment_camera, container, false);
 
@@ -80,11 +80,6 @@ public class CameraFragment extends Fragment {
         videoView.setVideoURI(Uri.parse(path));
         videoView.requestFocus();
         videoView.start();
-
-
-
-
-
 
         return rootView;
     }
