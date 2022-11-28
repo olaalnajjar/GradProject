@@ -65,15 +65,17 @@ public class CameraFragment extends Fragment {
         // Inflate the layout for this fragment
 
 
-        VideoView videoView =  container.findViewById(R.id.videoView);
+        VideoView videoView =  (VideoView) container.findViewById(R.id.videoView);
 
         String path = "android.resource://"+getActivity().getPackageName()+"/" + R.raw.test;
+
         if (videoView != null) {
+            videoView.setVideoPath(path);
             MediaController mediaController = new MediaController(getActivity());
             mediaController.setAnchorView(videoView);
             videoView.setMediaController(mediaController);
            // videoView.setVideoPath(path);
-            videoView.setVideoURI(Uri.parse(path));
+            //videoView.setVideoURI(Uri.parse(path));
             videoView.requestFocus();
             videoView.start();
         } else {
