@@ -9,13 +9,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 
 import com.example.gradproject.databinding.ActivityMainBinding;
@@ -75,6 +73,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.UserSettings:
                 Intent intent = new Intent(this, UserSettingsActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.DashboardItem:
+                Intent intent1 = new Intent(this, DashboardActivity.class);
+                startActivity(intent1);
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
