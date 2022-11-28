@@ -1,5 +1,6 @@
 package com.example.gradproject;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
+import android.widget.Toast;
+import android.widget.VideoView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +63,37 @@ public class CameraFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+        VideoView videoView =  container.findViewById(R.id.videoView);
+
+        String path = "android.resource://"+getActivity().getPackageName()+"/" + R.raw.test;
+        if (videoView != null) {
+            MediaController mediaController = new MediaController(getActivity());
+            mediaController.setAnchorView(videoView);
+            videoView.setMediaController(mediaController);
+           // videoView.setVideoPath(path);
+            videoView.setVideoURI(Uri.parse(path));
+            videoView.requestFocus();
+            videoView.start();
+        } else {
+            Toast.makeText(getActivity(), "View is null", Toast.LENGTH_SHORT);
+        }
+
+
+
+
+       /* if (view != null)
+        {
+            view.setVideoURI(Uri.parse(path));
+            view.requestFocus();
+            view.start();
+        } else
+        {
+            Toast.makeText(getActivity(),"View is null",Toast.LENGTH_SHORT);
+        }*/
+
+
         return inflater.inflate(R.layout.fragment_camera, container, false);
     }
 }

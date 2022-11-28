@@ -34,6 +34,10 @@
     <string name="CamerasDrawer">Cameras</string>
     <string name="DashboardDrawer">Dashboard</string>
     <string name="LogoutDrawer">Logout</string>
+    <string name="Camera_Label_Title">Living Room</string>
+    <string name="current_vitals">Current Vitals:</string>
+    <string name="blood_pressure">Blood Pressure: 120/80 mmHg</string>
+    <string name="heart_rate">Heart Rate: 72 BPM</string>
 
 
 </resources>
