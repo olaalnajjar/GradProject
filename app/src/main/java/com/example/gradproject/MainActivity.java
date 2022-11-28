@@ -99,4 +99,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fragmentTransaction.replace(R.id.nav_frag,fragment);
         fragmentTransaction.commit();
     }
+    @Override
+    public void onStop() {
+        super.onStop();
+
+
+
+    }
 }

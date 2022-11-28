@@ -8,6 +8,74 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.gradproject.MainActivity">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="144dp"
+                android:layout_height="132dp"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/girl_svgrepo_com__1_">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_user_background"
+                android:elevation="1dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"
+                    android:layout_gravity="center_horizontal"
+                    android:foreground="@drawable/gradient_user_background"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="-1dp">
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/nameplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nameTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/userSettingsName"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/drawer_nav_view"
         android:layout_width="wrap_content"
@@ -17,12 +85,8 @@
         app:headerLayout="@layout/nav_header"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        app:menu="@menu/drawer_menu" />
+        app:menu="@menu/drawer_menu" >
 
-    <FrameLayout
-        android:id="@+id/settings"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    </com.google.android.material.navigation.NavigationView>
 
-    </FrameLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
