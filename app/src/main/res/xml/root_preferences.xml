@@ -32,8 +32,32 @@
             android:key="allcameras"
             android:title="@string/allcameras"
             app:summary="Turns on all cameras in the house during day and time. If turned off, detects which room the senior is in and only turns on that camera." />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:key="c1name"
+            app:title="@string/camera1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:key="c2name"
+            app:title="@string/camera2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:key="c3name"
+            app:title="@string/camera3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:key="c4name"
+            app:title="@string/camera4"
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Preference category">
+    <PreferenceCategory android:title="@string/cControl">
         <SwitchPreference
             android:defaultValue="false"
             android:key="powerCamera1"
@@ -49,7 +73,7 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="powerCamera4"
-            android:title="Switch preference" />
+            android:title="@string/camera4" />
     </PreferenceCategory>
 
 
