@@ -80,6 +80,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent1 = new Intent(this, DashboardActivity.class);
                 startActivity(intent1);
                 break;
+            case R.id.LogoutItem:
+                Intent intent2 = new Intent(this,LoginActivity.class);
+                startActivity(intent2);
+                finish();
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

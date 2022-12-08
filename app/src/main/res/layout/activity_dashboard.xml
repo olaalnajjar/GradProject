@@ -10,13 +10,15 @@
 
     <Button
         android:id="@+id/addHouseBtn"
-        android:layout_width="252dp"
-        android:layout_height="61dp"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="#FFFFFF"
-        android:drawableLeft="@drawable/__icon__plus_"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/__icon__plus_"
+        android:gravity="center"
+        android:padding="12dp"
         android:text="@string/AddButton"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +31,10 @@
         android:layout_width="251dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="556dp"
+        android:background="@drawable/button"
+
         android:text="@string/LogoutDrawer"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,13 +43,13 @@
         android:id="@+id/currentHouse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:text="@string/CurrentHouse"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addHouseBtn" />
 

@@ -38,14 +38,12 @@
                 android:id="@+id/DashboardItem"
                 android:icon="@drawable/dashboard_"
                 android:title="@string/DashboardDrawer"/>
+            <item
+                android:id="@+id/LogoutItem"
+                android:icon="@drawable/logout"
+                android:title="@string/LogoutDrawer" />
 
         </group>
-
-
-        <item
-            android:id="@+id/LogoutItem"
-            android:icon="@drawable/logout"
-            android:title="@string/LogoutDrawer"/>
 
 
 </menu>
