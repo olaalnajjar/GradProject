@@ -3,6 +3,7 @@ package com.example.gradproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -41,6 +42,12 @@ public class UserSettingsActivity extends AppCompatActivity implements Navigatio
         drawer =(DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         setSupportActionBar(toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawer.open();
+            }
+        });
         getSupportActionBar().setTitle("Settings");
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawer.addDrawerListener(toggle);
