@@ -21,7 +21,6 @@
     <string name="title_camera">Camera</string>
     <string name="title_analysis">Analysis</string>
     <string name="map_label">Senior Location Detected</string>
-   
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <!--                  Drawer texts                        -->
@@ -53,7 +52,6 @@
     <string name="title_activity_camera_settings">Camera Settings</string>
 
 
-
     <!--  Preferences -->
     <string name="nameTitle">Name</string>
     <string name="usernameTitle">Username</string>
@@ -66,7 +64,6 @@
     <string name="camera3">Camera III</string>
     <string name="camera4">Camera IV</string>
     <string name="cControl"> Camera Control</string>
-
 
 
 </resources>
