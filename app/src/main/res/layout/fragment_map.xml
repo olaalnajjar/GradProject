@@ -7,6 +7,7 @@
     tools:context=".MapFragment">
 
     <TextView
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -19,17 +20,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="363dp"
-        android:layout_height="204dp"
-        android:contentDescription="TODO"
-        android:src="@drawable/hometransparent"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="363dp"
+            android:layout_height="204dp"
+            android:contentDescription="Map Image"
+            android:src="@drawable/hometransparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.329" />
+
+    </RelativeLayout>
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -41,7 +56,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout" />
 
     <TextView
         android:id="@+id/textView2"
@@ -53,6 +68,6 @@
         android:text="@string/map_label"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
