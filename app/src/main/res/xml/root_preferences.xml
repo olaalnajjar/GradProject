@@ -2,7 +2,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <PreferenceCategory android:title="@string/title_activity_user_settings">
+    <PreferenceCategory android:title="@string/title_activity_user_settings"
+        android:layout="@layout/reference_category">
 
         <EditTextPreference
             app:key="phone"
@@ -21,7 +22,9 @@
             app:title="@string/emailTitle"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/title_activity_camera_settings">
+    <PreferenceCategory
+        android:layout="@layout/reference_category"
+        android:title="@string/title_activity_camera_settings">
 
         <SwitchPreference
             android:defaultValue="false"
@@ -57,7 +60,8 @@
             app:title="@string/camera4"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/cControl">
+    <PreferenceCategory android:title="@string/cControl"
+        android:layout="@layout/reference_category">
         <SwitchPreference
             android:defaultValue="false"
             android:key="powerCamera1"
